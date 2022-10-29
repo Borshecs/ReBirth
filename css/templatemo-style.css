@@ -474,6 +474,7 @@ figure.effect-honey:hover h2 i {
 
 #contact {
   color: white;
+  background-color: black;
   background-image: url(../img/bgmb.jpg);
   background-position: center;
   background-repeat: no-repeat;
