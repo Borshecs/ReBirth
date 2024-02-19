@@ -36,7 +36,7 @@ a:focus {
 }
 
 .btn:hover {
-  background-color: #ced4da;
+  background-color: #000000;
 }
 
 .tm-section-pad-top {
@@ -52,15 +52,15 @@ a:focus {
 }
 
 .tm-btn-primary {
-  color: rgb(255, 255, 255);
-  background-color: DodgerBlue;
+  color: rgb(0, 0, 0);
+  background-color: rgb(139, 190, 242);
   padding: 14px 35px;
   border-radius: 30px;
 }
 .btn {
-  background-color: DodgerBlue;
+  background-color: rgb(255, 255, 255);
   border: none;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 12px 30px;
   font-size: 16px;
   cursor: pointer;
@@ -69,11 +69,11 @@ a:focus {
 
 /* Darker background on mouse-over */
 .btn:hover {
-  background-color: RoyalBlue;
+  background-color: rgb(0, 0, 0);
 }
 .tm-btn-primary:hover,
 .tm-btn-primary:focus {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   background-color: black;
 }
 .tm-gallery-item h2
@@ -150,7 +150,7 @@ a:focus {
 
 .navbar-brand:hover,
 .tm-navbar.scroll .navbar-brand:hover {
-  color:DodgerBlue;
+  color:rgb(96, 153, 209);
 }
 
 .tm-navbar.scroll .navbar-brand {
@@ -163,6 +163,7 @@ a:focus {
 
 .tm-nav-link {
   color: white;
+  font-size: 25px;
 }
 
 .tm-navbar.scroll .tm-nav-link {
@@ -180,7 +181,7 @@ a:focus {
 .tm-navbar.scroll .tm-nav-link:hover,
 .tm-navbar.scroll .tm-nav-link.current,
 .tm-nav-link:hover {
-  color: DodgerBlue;
+  color: rgb(64, 158, 252);
 }
 
 .navbar-toggler {
@@ -250,7 +251,7 @@ a:focus {
 
 .tm-hero-title {
   font-size: 3.5rem;
-  text-shadow: 2px 2px 2px #333;
+  text-shadow: 2px 2px 2px #000000;
 }
 
 .tm-intro-next {
@@ -699,3 +700,74 @@ p {
     align-items: center;
     
   }
+
+
+#works .carousel {
+  max-width: 980px;
+  margin: 50px auto;
+  width: 100%;
+}
+#works .carousel-wrapper {
+  margin: 10px 30px;
+  overflow: hidden;
+  position: relative;
+}
+#works .carousel-items {
+  width: 10000px;
+  position: relative;
+}
+#works .carousel-block {
+  float: left;
+  width: 210px;
+  height: 100%;
+  overflow: hidden;
+  padding: 10px;
+}
+#works .carousel-block .work {
+  display: block;
+}
+#works .carousel-block .work img {
+  height: 200px;
+}
+#works .carousel-block .work p {
+  font-size: 1em;
+}
+#works .carousel-button-left a, #works .carousel-button-right a {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 150px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#works .carousel-button-left a {
+  float: left;
+  background: url("https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-left-01-128.png");
+  background-size: cover;
+}
+#works .carousel-button-right a {
+  float: right;
+  background: url("https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-left-01-128.png");
+  background-size: cover;
+  transform: rotate(180deg);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+.star {
+  transform-style: preserve-3d;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  color: red;
+}
+.star:before {
+  position: absolute;
+  content: '\2726';
+  color: inherit;
+  inset: 0;
+  box-shadow: 0 0 1em .5em #a3c2;
+  filter: drop-shadow(0 0 .5em white);
+  text-shadow: 0 0 .8em #fff5;
+}
+
+
